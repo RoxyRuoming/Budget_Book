@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+
+  background-image: url('/images/bg.jpg'); /* 使用相对路径 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+main {
+  max-width: 50rem;
+  width: 100%;
+  background-color: #fcfcfc;
+  padding: 1rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+}
+
+.status {
+  color: #e44d26;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.welcome-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.username {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4682B4;
+  text-decoration: underline;
+}
+
+.target-area {
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+}
+
+.target__button {
+  background-color: #808080;
+  color: #fff;
+  border: none;
+  padding: 0.5rem;
+  margin: 0.3rem;
+
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.input__target {
+  width: 50%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 0.3rem;
+}
+
+.balance {
+  font-weight: bold;
+  font-style: italic;
+  color:   #4682B4;
+  margin-top: 1rem;
+}
+
+.total-price {
+  font-size: 0.75rem;
+  color: #555;
+}
+
+.budgets {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.budget {
+  margin-bottom: 0.625rem;
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s;
+}
+
+.budget:hover {
+  background-color: white;
+}
+
+.budget__text {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.budget__delete {
+  background-color: #B0C4DE;
+  color: #fff;
+  border: none;
+  padding: 0.3125rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 0.3125rem;
+}
+
+.add__button {
+  background-color: #B0C4DE; /* 橙红色 */
+  color: #fff;
+  border: none;
+
+  border-radius: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+  transition: background-color 0.3s ease; /* 平滑的颜色过渡效果 */
+}
+
+.add__button:hover {
+  background-color: #4682B4; /* 鼠标悬停时的颜色 */
+}
+
+
+.controls {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.controls__refresh,
+.controls__logout {
+  background-color: #808080;
+  color: #fff;
+  border: none;
+  padding: 0.625rem;
+  font-size: 1rem;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+}
+
+.controls__logout {
+  background-color: #800000;
+}
+
+.login__title {
+  font-size: 1.5rem; 
+  font-weight: bold;
+  color: #333; 
+  margin-bottom: 1rem; 
+}
+
+.login__text {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.login__button {
+  background-color:#808080;;
+  color: #fff;
+  border: none;
+  margin-left: 1rem;
+  padding: 0.3rem 0.5rem;
+
+  border-radius: 5px;
+  cursor: pointer;
+}
